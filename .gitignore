@@ -1,0 +1,59 @@
+################################
+# Maven / Java
+################################
+target/
+build/
+*.log
+
+################################
+# Maven Wrapper
+################################
+.mvn/
+!mvnw
+!mvnw.cmd
+
+################################
+# Spring Boot
+################################
+# Local / env specific configs
+application-local.yml
+application-dev.yml
+application-prod.yml
+
+# SQL seed / local data
+data.sql
+schema-auth.sql
+
+################################
+# IDEs
+################################
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse / STS
+.classpath
+.project
+.settings/
+.apt_generated
+.factorypath
+.springBeans
+.sts4-cache
+
+# VS Code
+.vscode/
+
+################################
+# OS files
+################################
+.DS_Store
+Thumbs.db
+
+
+################################
+# Git
+################################
+.git/

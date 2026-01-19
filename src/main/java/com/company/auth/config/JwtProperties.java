@@ -1,0 +1,29 @@
+package com.company.auth.config;
+
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
+@Getter
+@Setter
+@Component
+@ConfigurationProperties(prefix = "security.jwt")
+public class JwtProperties {
+
+    private String secret;
+
+    private long accessTokenExpiryMinutes;
+
+    private long refreshTokenExpiryDays;
+
+    private String refreshTokenCookieName;
+
+    private boolean cookieHttpOnly;
+
+    private boolean cookieSecure;
+
+    private String cookieDomain;
+
+    private String cookieSameSite;
+}
